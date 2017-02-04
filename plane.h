@@ -19,6 +19,7 @@ public:
   int calcCost(int distance, int numPassengers, int *trips) const;
   const char* getName() const;
   void getPlane();
+  bool operator < (const Plane &rhs) const;
   friend ostream& operator << (ostream &os, const Plane &plane);
   static const double fuelPrice = 3.39;
 };  // class Plane

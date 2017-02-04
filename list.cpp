@@ -118,13 +118,33 @@ T& List<T>::operator [] (int index)
 template <typename T>
 ostream& operator << (ostream &os, const List<T> &rhs)
 {
-  for (int i = rhs.getCount() - 1; i >= 0; i--)
-    os << rhs[i];
+  //for (int i = rhs.getCount() - 1; i >= 0; i--)
+  //  os << rhs[i];
 
+  for (int i = 0; i < rhs.getCount(); i++)
+    os << rhs[i];
   return os;
 } //overloaded << operator
 
+template <typename T>
+void List<T>::reverse() 
+{
+  ListNode<T> *ptr, *prev, *nxt;  
 
+  ptr = prev = nxt = NULL;  
+
+  if (!head) //head is null
+    return;
+
+  for (ptr = head; ptr; ptr = nxt)
+  { 
+    nxt = ptr->next;
+    ptr->next = prev;
+    prev = ptr;
+  } //reversal loop
+
+  head = prev;
+} //reverse funct
 
 
 

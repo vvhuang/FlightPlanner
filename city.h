@@ -6,13 +6,14 @@ using namespace std;
 
 class City
 {
-public:
+protected: 
   double longitude;
   double latitude;
   char *name;
   char *state;
   char airport[4];
   int population;
+public:
   City();
   City(const City &rhs);
   ~City();
@@ -22,11 +23,14 @@ public:
   void deallocate();
   bool hasAirport();
   void readAirport(char *line, const char *state2);
+
   void setAirport(const char *airport);
+  int getPopulation();
   int showTraffic(const City &destCity) const;
-  City& operator= (const City& rhs);
-  bool operator==(const City& rhs) const;
-  friend istream& operator>>(istream &is, City &city);
+  City& operator = (const City& rhs);
+  bool operator == (const City &rhs) const;
+  bool operator < (const City &rhs) const;
+  friend istream& operator >> (istream &is, City &rhs);
 };  // class City
 
 #endif	// CITY_H 

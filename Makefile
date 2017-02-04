@@ -1,18 +1,17 @@
-simulator.out: city.o main.o citylist.o plane.o
-	g++ -Wall -ansi -g -lm -o simulator.out city.o main.o citylist.o plane.o
+simulator.out: city.o main.o plane.o airport.o
+	g++ -Wall -g -ansi -o simulator.out city.o main.o plane.o airport.o
 
-city.o: city.cpp city.h
-	g++ -Wall -ansi -g -c city.cpp
+city.o: city.cpp city.h airport.h
+	g++ -Wall -g -ansi -c city.cpp
 
-main.o: main.cpp citylist.h plane.h
-	g++ -Wall -ansi -g -c main.cpp
-
-citylist.o: citylist.cpp citylist.h city.h
-	g++ -Wall -ansi -g -c citylist.cpp
+main.o: main.cpp list.h list.cpp airport.h
+	g++ -Wall -g -ansi -c main.cpp
 
 plane.o: plane.cpp plane.h
-	g++ -Wall -ansi -g -c plane.cpp
+	g++ -Wall -g -ansi -c plane.cpp
+
+airport.o: airport.cpp airport.h city.h list.h list.cpp
+	g++ -Wall -g -ansi -c airport.cpp
 
 clean:
-	rm -f simulator.out city.o main.o citylist.o plane.o
-
+	rm -f simulator.out city.o main.o airport.o plane.o 

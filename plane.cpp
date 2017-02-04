@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <iomanip>
 #include <climits>
 #include <cmath>
@@ -82,3 +83,14 @@ ostream& operator << (ostream &os, const Plane &plane)
     
   return os;
 }  // operator<<
+
+bool Plane::operator < (const Plane &rhs) const
+{
+  int cmp = strcmp(name, rhs.getName());
+
+  if (cmp < 0) // name < rhs
+    return false;
+
+  return true;
+}//overloaded < operator
+

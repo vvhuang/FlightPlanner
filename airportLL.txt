@@ -165,6 +165,8 @@ Arkansas
 [HRO]  36.27   93.15  Harrison,AR
 [HOT]  34.48   93.10  Hot Springs,AR
 [JBR]  35.83   90.65  Jonesboro,AR
+[LIT]  35.22   92.38  Little Rock,AR
+[LRF]  34.92   92.15  Little Rock,AR
 [LZK]  34.83   92.25  Little Rock,AR
 [PBF]  34.17   91.93  Pine Bluff,AR
 [ASG]  36.18   94.13  Springdale,AR

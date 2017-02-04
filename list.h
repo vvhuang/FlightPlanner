@@ -33,6 +33,7 @@ public:
   List<T>& operator -= (const T &rhs);
   const T& operator [] (int index) const;
   T& operator [] (int index);
+  void reverse();
 
   template <typename U>
   friend ostream& operator << (ostream &os, const List<U> &rhs);
