@@ -18,7 +18,7 @@ Concepts used: object-oriented programming, stream manipulation, overloaded oper
 ## Sample input/output:
 
 
-[*******@pc15 ~/p6]$ head -11 airlines-1.txt
+[*******@pc15 ~/p6]$ __head -11 airlines-1.txt__
 
 ```
 United COS SCK
@@ -34,7 +34,7 @@ Alaska NGU COS
 GRB 11 United OJC United PUB Delta BOS Southwest PVU Southwest WJF SkyWest FAT SkyWest IND SkyWest CRP Virgin FWA Virgin ELP Virgin RAL 
 ```
 
-[*******@pc15 ~/p6]$ simulator.out airlines-1.txt
+[*******@pc15 ~/p6]$ __simulator.out airlines-1.txt__
 ```
 Flight Simulator Menu
 0. Done.
@@ -47,7 +47,7 @@ Flight Simulator Menu
 7. Determine route between two airports.
 ```
 
-Your choice (0 - 7): 3
+Your choice (0 - 7): __3__
 
 ```
 Plane Information
@@ -70,9 +70,9 @@ Flight Simulator Menu
 7. Determine route between two airports.
 
 ```
-Your choice (0 - 7): 7
+Your choice (0 - 7): __7__
 
-Please enter origin destination and an airline: SCK LFT Southwest
+Please enter origin destination and an airline: __SCK LFT Southwest__
 
 ```
 So-SCK So-W39 So-ROC So-CCR So-DET So-LFT 
@@ -87,9 +87,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 7
+Your choice (0 - 7): __7__
 
-Please enter origin destination and an airline: DSM ANC Delta
+Please enter origin destination and an airline: __DSM ANC Delta__
 
 ```
 De-DSM De-ORL De-CLT De-LNK De-AUS De-ANC 
@@ -104,9 +104,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 7
+Your choice (0 - 7): __7__
 
-Please enter origin destination and an airline: SFO LAX Southwest
+Please enter origin destination and an airline: __SFO LAX Southwest__
 
 ```
 No route found.
@@ -122,9 +122,9 @@ Flight Simulator Menu
 7. Determine route between two airports.
 ```
 
-Your choice (0 - 7): 1
+Your choice (0 - 7): __1__
 
-Please enter two airport abbreviations (XXX XXX): SFO NYC
+Please enter two airport abbreviations (XXX XXX): __SFO NYC__
 
 ```
 2531 passengers fly the 2570 miles from
@@ -140,9 +140,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 1
+Your choice (0 - 7): __1__
 
-Please enter two airport abbreviations (XXX XXX): SFO XYZ
+Please enter two airport abbreviations (XXX XXX): __SFO XYZ__
 ```
 XYZ is not a valid airport.
 
@@ -156,7 +156,7 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 3
+Your choice (0 - 7): __3__
 ```
 Plane Information
 Name        Pass. Range Speed Fuel   MPG   $/mi  Price * 10^6
@@ -175,14 +175,14 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 4
+Your choice (0 - 7): __4__
 
-Name: 787-3
-Passengers: 330
-Fuel capacity (in U.S. gallons): 5543
-Range (in miles): 1525
-Speed (in mph): 587 
-Price: 130000000
+Name: __787-3__
+Passengers: __330__
+Fuel capacity (in U.S. gallons): __5543__
+Range (in miles): __1525__
+Speed (in mph): __587__
+Price: __130000000__
 ```
 
 Flight Simulator Menu
@@ -195,7 +195,7 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 3
+Your choice (0 - 7): __3__
 ```
 Plane Information
 Name        Pass. Range Speed Fuel   MPG   $/mi  Price * 10^6
@@ -215,9 +215,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 5
+Your choice (0 - 7): __5__
 
-Please enter two airport abbreviations (XXX XXX): MIA LAX
+Please enter two airport abbreviations (XXX XXX): __MIA LAX__
 ```
 Passengers Miles  Trips Name      Cost
 628        2339   2     767-300ER $97706
@@ -232,9 +232,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 7
+Your choice (0 - 7): __7__
 
-Please enter origin destination and an airline: LAX SFO United
+Please enter origin destination and an airline: __LAX SFO United__
 ```
 No route found.
 
@@ -248,9 +248,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 5
+Your choice (0 - 7): __5__
 
-Please enter two airport abbreviations (XXX XXX): LAX SFO
+Please enter two airport abbreviations (XXX XXX): __LAX SFO__
 ```
 Passengers Miles  Trips Name      Cost
 1173       339    4     787-3     $28057
@@ -265,9 +265,9 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 2
+Your choice (0 - 7): __2__
 
-Please enter an airport abbreviation (XXX): SFO
+Please enter an airport abbreviation (XXX): __SFO__
 ```
 Green Bay, Wisconsin: 30
 Billings, Montana: 31
@@ -436,7 +436,7 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 6
+Your choice (0 - 7): __6__
 ```
 GRB: Vi-RAL Vi-ELP Vi-FWA Sk-CRP Sk-IND Sk-FAT So-WJF So-PVU De-BOS Un-PUB Un-OJC 
 BIL: Sk-NEW Sk-LRD Sk-PDX Je-AUS De-NGU De-OKC De-STL Un-BOS 
@@ -605,5 +605,5 @@ Flight Simulator Menu
 6. Show airline flights.
 7. Determine route between two airports.
 ```
-Your choice (0 - 7): 0
+Your choice (0 - 7): __0__
 
